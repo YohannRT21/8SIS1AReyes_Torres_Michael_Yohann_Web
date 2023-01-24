@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.userloggin{
+    background-color: beige;
+    width: 600px;
+    height: 50px;
+    border-radius: 15px solid rgb(156, 243, 16);
+    margin-top: 10%;
+    text-align-last: center;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Lucida sans', 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: 15px;
+    padding-top: 10px;
+    color: blueviolet; 
+    /*unicamente se debe de poner un padding ya que si */
+}
