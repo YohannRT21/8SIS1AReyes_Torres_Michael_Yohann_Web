@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Sueldo para Vendedor</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="container" >
+        <div class="text" >
+            <p>Calculadora de Sueldo para Vendedor</p>
+            <div class="form" >
+                <form method="post" name="formulario" action="">
+                    <div class="table-content" >
+                        <table>
+                            <tr>
+                                <td>Introduce el sueldo base del vendedor:</td>
+                                <td>
+                                    <input type="text" name="sueldoBase" id="sueldoBase">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Venta 1:</td>
+                                <td>
+                                    <input type="text" name="venta1" id="venta1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Venta 2:</td>
+                                <td>
+                                    <input type="text" name="venta2" id="venta2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Venta 3:</td>
+                                <td>
+                                    <input type="text" name="venta3" id="venta3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="button" value="Calcular Sueldo" name="calcular" onclick="calcularSueldo()">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Comisiones:</td>
+                                <td>
+                                    <input type="text" readonly="readonly" class="input_text" name="comisiones" id="comisiones">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sueldo Total:</td>
+                                <td>
+                                    <input type="text" readonly="readonly" class="input_text" name="sueldoTotal" id="sueldoTotal">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="button" value="Borrar Datos" name="borrar" onclick="borrarDatos()">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function calcularSueldo() {
+            var sueldoBase = parseFloat(document.getElementById('sueldoBase').value);
+            var venta1 = parseFloat(document.getElementById('venta1').value);
+            var venta2 = parseFloat(document.getElementById('venta2').value);
+            var venta3 = parseFloat(document.getElementById('venta3').value);
+
+            var comisiones = (venta1 + venta2 + venta3) * 0.1;
+            var sueldoTotal = sueldoBase + comisiones;
+
+            document.getElementById('comisiones').value = comisiones.toFixed(2);
+            document.getElementById('sueldoTotal').value = sueldoTotal.toFixed(2);
+        }
+
+        function borrarDatos() {
+            document.getElementById('sueldoBase').value = '';
+            document.getElementById('venta1').value = '';
+            document.getElementById('venta2').value = '';
+            document.getElementById('venta3').value = '';
+            document.getElementById('comisiones').value = '';
+            document.getElementById('sueldoTotal').value = '';
+        }
+    </script>
+</body>
+</html>
