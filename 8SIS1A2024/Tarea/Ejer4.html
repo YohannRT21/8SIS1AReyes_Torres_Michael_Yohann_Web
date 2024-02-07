@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="10_algoritmos.js"></script>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            color : rgb(0, 0, 0); 
+        }
+        h1{
+            font-size: 50px;
+            font-style: italic;
+        }
+        body input{
+            background-color: rgb(255, 253, 253);
+            border-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            font-style: italic;
+        }
+        button{
+            background-color: rgb(248, 248, 248);
+            border-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tarea 4 </h1>
+    </header>
+    <main>
+        <h2>Obtener Calificacion final </h2>
+        <form action="/" method="post">
+            <label for="parcial1">Primer Parcial</label>
+            <input type="text" name="parcial1" id="parcial1">
+            <br>
+            <br>
+            <label for="parcial2">Segundo Parcial</label>
+            <input type="text" name="parcial2" id="parcial2">
+            <br>
+            <br>
+            <label for="parcial3">Tercer Parcial</label>
+            <input type="text" name="parcial3" id="parcial3">
+            <br>
+            <br>
+            <h3>Examen Final</h3>
+            <label for="examen">Examen Final</label>
+            <input type="text" name=""examen id="examen">
+            <br>
+            <br>
+            <h3>Trabajo Final</h3>
+            <label for="trabajo">Trabajo Final </label>
+            <input type="text" name="trabajo" id="trabajo">
+
+            <button onclick="tarea4()"> Calcular </button>
+
+        </form>
+    </main>
+</body>
+</html>
