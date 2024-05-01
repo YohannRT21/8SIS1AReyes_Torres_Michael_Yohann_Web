@@ -1,25 +1,25 @@
 *{
-    padding: 0;
-    margin: 0;
-    color: #1d69c0;
+    padding : 0;
+    margin : 0;
+    color : #00dd34;
     text-align: center;
 }
 
 html, body{
-    background-color: #997766
+
+    background-color: #996655;
 }
 
 .main-container{
-    border: 4px solid rgb(255, 0,  84); 
+    border : 4px solid rgb(255, 0, 85);
     border-radius: 50px;
-    margin: 2rem; 
+    margin: 2rem;
+    background-color: #0996d2;
     padding: 1rem;
-    background-color: #09d4c2;
 }
 
 nav, section, footer, aside, article{
-
-    border: 2px solid #a33452;
+    border: 2px solid #9f34a3;
     margin: 1rem;
     border-radius: 10px;
     padding: 1rem;
@@ -28,10 +28,10 @@ nav, section, footer, aside, article{
 article, aside{
     width: 40%;
     display: inline-block;
-    height: 300px;
-    background-color: #e97641;
+    height: 200px;
+    background-color: aquamarine;
 }
 
 nav, footer, section{
-    background-color: darkgrey;
+    background-color: burlywood;
 }

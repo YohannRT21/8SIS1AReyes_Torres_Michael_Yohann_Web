@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Divisas</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <h1 Class = "conversor" id="titulo">Conversor de Divisas</h1>
+
+  <br>
+  <br>
+  <br>
+  <div id="mi_div">
+
+    <label class="cantidad" for="amount">Cantidad:</label>
+    <input Class="cantidad2" id="amount" placeholder="Ingrese la cantidad" class="opciones">
+    <span style="color: red;" id="span1"></span>
+
+    <br>
+    <br>
+
+    <label class="Divisa" for="fromCurrency">Divisa de origen:</label>
+    <select class="opciones" id="fromCurrency" class="opciones">
+      <option value="USD">Dólares estadounidenses (USD)</option>
+      <option value="EUR">Euros (EUR)</option>
+      <option value="GBP">Libras Esterlinas (GBP)</option>
+      <option value="JPY">Yenes Japoneses (JPY)</option>
+      <!-- Agrega más opciones según sea necesario -->
+    </select>
+
+    <br>
+    <br>
+
+    <label class="Divisa2" for="toCurrency">Divisa de destino:</label>
+    <select id="toCurrency" class="opciones">
+      <option value="USD">Dólares estadounidenses (USD)</option>
+      <option value="EUR">Euros (EUR)</option>
+      <option value="GBP">Libras Esterlinas (GBP)</option>
+      <option value="JPY">Yenes Japoneses (JPY)</option>
+      <!-- Agrega más opciones según sea necesario -->
+    </select>
+
+    <br>
+    <br>
+
+    <button id="boton" class="opciones">Convertir</button>
+
+    <p class="resultado" id="resultado"></p>
+
+    <script src="Examen2dopar.js"></script>
+
+  </div>
+
+</body>
+
+</html>

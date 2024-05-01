@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversion</title>
+    <script src="validacion.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <div class="examen">EXAMEN</div>
+    <br>
+    <label class="capital" for="capital">Capital : </label>
+    <input class="inputcapital" type="text" name="capital" id="capital" placeholder="Monto" >
+    <span id="mensaje" style="color: chocolate;"></span>
+    <br>
+    <br>
+    <label class="porcentaje" for="porcentaje">Porcentaje : </label>
+    <select class="selecporcentaje" name="porcentaje" id="porcentaje">
+        <option value="27">%18.5</option>
+    </select>
+    <br>
+    <br>
+    <label class="dias" for="dias">Días : </label>
+    <select class="selecdias" name="dias" id="dias">
+        <option value="28">28</option>
+        <option value="51">34</option>
+        <option value="95">95</option>
+        <option value="362">362</option>
+    </select>
+    <br>
+    <br>
+    <button class="boton" id="boton">Calcular</button>
+    <br>
+    <br>
+
+    <!-- Agrega una tabla para mostrar los resultados -->
+    <table class="tabla" border="1">
+        <thead>
+            <tr class="arribatabla">
+                <th>Día</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody id="tablaResultados"></tbody>
+    </table>
+
+    <br>
+    <span id="Resultados"></span>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var boton = document.getElementById("boton");
+    boton.onclick = function () {
+        validacion_capital();
+    }
+});
+    </script>
+</body>
+</html>
